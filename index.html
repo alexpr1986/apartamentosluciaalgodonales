@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alquiler de apartamentos en Algodonales, Cádiz. Disfruta de la naturaleza, la cultura y las actividades al aire libre.">
+    <title>Apartamentos Lucía Algodonales</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        header p {
+            font-size: 18px;
+            margin-top: 5px;
+        }
+        nav {
+            background: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #1abc9c;
+        }
+        section {
+            padding: 50px;
+            margin: 20px;
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        .apartamentos {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+        .apartamento {
+            flex: 1;
+            min-width: 250px;
+            max-width: 300px;
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .apartamento img {
+            width: 100%;
+            border-radius: 8px;
+            height: 200px;
+            object-fit: cover;
+        }
+        .apartamento h3 {
+            color: #2c3e50;
+            font-size: 24px;
+            margin: 10px 0;
+        }
+        .apartamento p {
+            color: #7f8c8d;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        footer {
+            background: #34495e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .formulario {
+            background: #ecf0f1;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        .formulario input, .formulario textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .formulario button {
+            background: #1abc9c;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .formulario button:hover {
+            background: #16a085;
+        }
+        /* Estilos para galería */
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        .galeria img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Apartamentos Lucía Algodonales</h1>
+    <p>Tu destino vacacional en el corazón de la Sierra de Cádiz</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#apartamentos">Apartamentos</a>
+    <a href="#actividades">Actividades</a>
+    <a href="#fiestas">Fiestas Populares</a>
+    <a href="#reserva">Reserva</a>
+</nav>
+
+<section id="inicio">
+    <h2>Bienvenido a Apartamentos Lucía Algodonales</h2>
+    <p>En **Apartamentos Lucía Algodonales**, ofrecemos tres apartamentos con diferentes capacidades para que puedas disfrutar de unas vacaciones cómodas y agradables en pleno corazón de la naturaleza.</p>
+    
+    <!-- Sección de Apartamentos -->
+    <h3>Conoce Nuestros Apartamentos</h3>
+    <div class="apartamentos">
+        <!-- Apartamento 1: 2 Personas -->
+        <div class="apartamento">
+            <img src="imagenes/apartamento1.jpg" alt="Apartamento 1">
+            <h3>Apartamento para 2 Personas</h3>
+            <p>Un apartamento acogedor y bien equipado, ideal para parejas. Cuenta con una habitación, cocina completa y baño privado.</p>
+            <a href="#apartamento1">Ver más detalles</a>
+        </div>
+
+        <!-- Apartamento 2: 4 Personas -->
+        <div class="apartamento">
+            <img src="imagenes/apartamento2.jpg" alt="Apartamento 2">
+            <h3>Apartamento para 4 Personas</h3>
+            <p>Un apartamento espacioso con dos habitaciones, cocina completa, baño privado y salón. Perfecto para familias o grupos pequeños.</p>
+            <a href="#apartamento2">Ver más detalles</a>
+        </div>
+
+        <!-- Apartamento 3: 6 Personas -->
+        <div class="apartamento">
+            <img src="imagenes/apartamento3.jpg" alt="Apartamento 3">
+            <h3>Apartamento para 6 Personas</h3>
+            <p>Amplio y cómodo, ideal para grupos grandes o familias. Dispone de tres habitaciones, cocina equipada y salón.</p>
+            <a href="#apartamento3">Ver más detalles</a>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Apartamento 1 - Detalles y Galería de Imágenes -->
+<section id="apartamento1">
+    <h2>Apartamento para 2 Personas</h2>
+    <p>Un apartamento acogedor y bien equipado, ideal para parejas. Cuenta con una habitación, cocina completa y baño privado.</p>
+    <p><strong>Precio: 90€/noche</strong></p>
+    
+    <h3>Galería de Imágenes</h3>
+    <div class="galeria">
+        <img src="imagenes/apartamento1_1.jpg" alt="Apartamento 1 - Imagen 1">
+        <img src="imagenes/apartamento1_2.jpg" alt="Apartamento 1 - Imagen 2">
+        <img src="imagenes/apartamento1_3.jpg" alt="Apartamento 1 - Imagen 3">
+        <!-- Agrega más imágenes hasta llegar a 20 -->
+    </div>
+
+    <h3>Datos de contacto</h3>
+    <p><strong>Teléfono:</strong> [Tu número]</p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/[Tu número]" target="_blank">Contactar por WhatsApp</a></p>
+    <p><strong>Correo electrónico:</strong> <a href="mailto:info@apartamentosluciaalgodonales.com">info@apartamentosluciaalgodonales.com</a></p>
+</section>
+
+<!-- Sección Apartamento 2 - Detalles y Galería de Imágenes -->
+<section id="apartamento2">
+    <h2>Apartamento para 4 Personas</h2>
+    <p>Un apartamento espacioso con dos habitaciones, cocina completa, baño privado y salón. Perfecto para familias o grupos pequeños.</p>
+    <p><strong>Precio: 150€/noche</strong></p>
+
+    <h3>Galería de Imágenes</h3>
+    <div class="galeria">
+        <img src="imagenes/apartamento2_1.jpg" alt="Apartamento 2 - Imagen 1">
+        <img src="imagenes/apartamento2_2.jpg" alt="Apartamento 2 - Imagen 2">
+        <img src="imagenes/apartamento2_3.jpg" alt="Apartamento 2 - Imagen 3">
+        <!-- Agrega más imágenes hasta llegar a 20 -->
+    </div>
+
+    <h3>
